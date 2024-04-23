@@ -6,3 +6,14 @@ def pytest_collection_modifyitems(items):
     for i in items:
         i.name = i.name.encode("utf-8").decode("unicode_escape")
         i._nodeid = i.nodeid.encode("utf-8").decode("unicode_escape")
+
+
+def pytest_configure(config):
+    config.addinivalue_line("markers",
+                            "test_normal: mark test functions that test data type errors")
+    config.addinivalue_line("markers",
+                            "test_data_type_error: mark test functions that test data type errors")
+    config.addinivalue_line("markers",
+                            "test_data_range: mark test functions that test data type errors")
+    config.addinivalue_line("markers",
+                            "test_zero_division_error: mark test functions that test data type errors")

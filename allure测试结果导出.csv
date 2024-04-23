@@ -1,0 +1,188 @@
+﻿"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_01","TestCase","","","用户输入运算数据a、b, 程序输出正确的结果",""
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试add()函数的数据范围外参数
+        :param a: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 a；
+        :param b: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 b；
+        :param expected: 输出报错提示: ""参数大小超出范围""；
+        :return: 返回报错提示: ""参数大小超出范围""；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试add()函数的数据范围外参数
+        :param a: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 a；
+        :param b: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 b；
+        :param expected: 输出报错提示: ""参数大小超出范围""；
+        :return: 返回报错提示: ""参数大小超出范围""；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试div()函数的数据范围外参数
+        :param a: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 a；
+        :param b: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 b；
+        :param expected: 输出报错提示: ""参数大小超出范围""；
+        :return: 返回报错提示: ""参数大小超出范围""；
+        "
+"skipped","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_02","TestCase","","","用户输入运算数据a、b, a、b的数据类型不合法","
+        测试add()函数对输入数据的数据类型报错提示
+        :param a: 除int整型、float浮点型、double浮点型以外的其他数据类型
+        :param b: 除int整型、float浮点型、double浮点型以外的其他数据类型
+        :param expected: 输出报错提示: 输入的数据a、b数据类型不合法；
+        :return: 返回报错提示：输入的数据a、b数据类型不合法；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试add()函数的数据范围外参数
+        :param a: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 a；
+        :param b: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 b；
+        :param expected: 输出报错提示: ""参数大小超出范围""；
+        :return: 返回报错提示: ""参数大小超出范围""；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_01","TestCase","","","用户输入运算数据a、b, 程序输出正确的结果","
+        测试add()函数
+        :param a: 用户输入的数据a
+        :param b: 用户输入的数据b
+        :param expected: 输出a加b的结果
+        :return: 返回a加b的结果
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试div()函数的数据范围外参数
+        :param a: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 a；
+        :param b: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 b；
+        :param expected: 输出报错提示: ""参数大小超出范围""；
+        :return: 返回报错提示: ""参数大小超出范围""；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试div()函数的数据范围内参数
+        :param a: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 a；
+        :param b: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 b；
+        :param expected: 程序输出a加b的结果；
+        :return: 返回 a除以b的结果；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试add()函数的数据范围内参数
+        :param a: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 a；
+        :param b: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 b；
+        :param expected: 程序输出a加b的结果；
+        :return: 返回 a加 b的结果；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试add()函数的数据范围外参数
+        :param a: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 a；
+        :param b: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 b；
+        :param expected: 输出报错提示: ""参数大小超出范围""；
+        :return: 返回报错提示: ""参数大小超出范围""；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试div()函数的数据范围外参数
+        :param a: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 a；
+        :param b: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 b；
+        :param expected: 输出报错提示: ""参数大小超出范围""；
+        :return: 返回报错提示: ""参数大小超出范围""；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试add()函数的数据范围内参数
+        :param a: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 a；
+        :param b: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 b；
+        :param expected: 程序输出a加b的结果；
+        :return: 返回 a加 b的结果；
+        "
+"skipped","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_02","TestCase","","","用户输入运算数据a、b, a、b的数据类型不合法","
+        测试div()函数对输入数据的数据类型报错提示
+        :param a: 除int整型、float浮点型、double浮点型以外的其他数据类型
+        :param b: 除int整型、float浮点型、double浮点型以外的其他数据类型
+        :param expected: 输出报错提示: 输入的数据a、b数据类型不合法；
+        :return: 返回报错提示：输入的数据a、b数据类型不合法；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试div()函数的数据范围内参数
+        :param a: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 a；
+        :param b: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 b；
+        :param expected: 程序输出a加b的结果；
+        :return: 返回 a除以b的结果；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试add()函数的数据范围外参数
+        :param a: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 a；
+        :param b: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 b；
+        :param expected: 输出报错提示: ""参数大小超出范围""；
+        :return: 返回报错提示: ""参数大小超出范围""；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试div()函数的数据范围内参数
+        :param a: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 a；
+        :param b: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 b；
+        :param expected: 程序输出a加b的结果；
+        :return: 返回 a除以b的结果；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试div()函数的数据范围内参数
+        :param a: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 a；
+        :param b: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 b；
+        :param expected: 程序输出a加b的结果；
+        :return: 返回 a除以b的结果；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_01","TestCase","","","用户输入运算数据a、b, 程序输出正确的结果","
+        测试add()函数
+        :param a: 用户输入的数据a
+        :param b: 用户输入的数据b
+        :param expected: 输出a加b的结果
+        :return: 返回a加b的结果
+        "
+"skipped","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_04","TestCase","","","用户输入运算数据a、b，运算规则不合法","
+        测试div()函数对除数为0的异常进行异常提示
+        :param a: 模拟用户输入的数据 a
+        :param b: 模拟用户输入的数据 b
+        :param expected: 输出异常类型ZeroDivisionError，并输出异常提示：除数不能为0
+        :return: 返回异常类型ZeroDivisionError，并输出异常提示：除数不能为0
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试add()函数的数据范围内参数
+        :param a: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 a；
+        :param b: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 b；
+        :param expected: 程序输出a加b的结果；
+        :return: 返回 a加 b的结果；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_01","TestCase","","","用户输入运算数据a、b, 程序输出正确的结果",""
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试add()函数的数据范围外参数
+        :param a: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 a；
+        :param b: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 b；
+        :param expected: 输出报错提示: ""参数大小超出范围""；
+        :return: 返回报错提示: ""参数大小超出范围""；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试add()函数的数据范围内参数
+        :param a: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 a；
+        :param b: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 b；
+        :param expected: 程序输出a加b的结果；
+        :return: 返回 a加 b的结果；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_01","TestCase","","","用户输入运算数据a、b, 程序输出正确的结果",""
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_01","TestCase","","","用户输入运算数据a、b, 程序输出正确的结果",""
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试add()函数的数据范围内参数
+        :param a: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 a；
+        :param b: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 b；
+        :param expected: 程序输出a加b的结果；
+        :return: 返回 a加 b的结果；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试add()函数的数据范围内参数
+        :param a: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 a；
+        :param b: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 b；
+        :param expected: 程序输出a加b的结果；
+        :return: 返回 a加 b的结果；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_01","TestCase","","","用户输入运算数据a、b, 程序输出正确的结果",""
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_03","TestCase","","","用户输入运算数据a、b，a或b大小超出范围","
+        测试div()函数的数据范围外参数
+        :param a: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 a；
+        :param b: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 b；
+        :param expected: 输出报错提示: ""参数大小超出范围""；
+        :return: 返回报错提示: ""参数大小超出范围""；
+        "
+"passed","Tue Apr 23 20:16:56 CST 2024","Tue Apr 23 20:16:56 CST 2024","0","test_case","test_case_01","TestCase","","","用户输入运算数据a、b, 程序输出正确的结果","
+        测试add()函数
+        :param a: 用户输入的数据a
+        :param b: 用户输入的数据b
+        :param expected: 输出a加b的结果
+        :return: 返回a加b的结果
+        "
