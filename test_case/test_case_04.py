@@ -1,7 +1,11 @@
+import logging
+
 import allure
 import pytest
 from get_data.get_data import GetData
 from func.func import Caculator
+
+from test_case.allure.allure_test_steps import step5
 
 """
 -------------------------------------------------------------
@@ -36,8 +40,10 @@ class TestCase:
         pass
 
     @allure.title("用户输入运算数据a、b，运算规则不合法")
-    @pytest.mark.test_zero_division_error
+    @allure.testcase("http://192.168.40.134:8080/projects/CACULATOR/issues/CACULATOR-3?filter=allissues", "用例管理系统")
+    @allure.issue("http://192.168.40.134:8080/projects/BUG/issues/BUG-2?filter=allopenissues", "Bug管理系统")
     @pytest.mark.xfail
+    @pytest.mark.test_zero_division_error
     @pytest.mark.parametrize('a,b,expected', GetData.get_zero_division_error())
     def test_zero_division_error(self, a, b, expected):
         """
@@ -47,8 +53,21 @@ class TestCase:
         :param expected: 输出异常类型ZeroDivisionError，并输出异常提示：除数不能为0
         :return: 返回异常类型ZeroDivisionError，并输出异常提示：除数不能为0
         """
-        caculator = Caculator(a, b)
-        assert caculator.div() == expected
+        # step5(a, b, expected)
+        with allure.step("1、输入数据a、b, b=0，调用div()方法；"):
+            caculator = Caculator(a, b)
+            with open("../allure_print_screen/3.png", mode="rb") as f:
+                file = f.read()
+                allure.attach(file, "报错页面截图", attachment_type=allure.attachment_type.PNG)
+            try:
+                # 可能产生异常的代码块
+                assert caculator.div() == expected
+                logging.info("这是test_case_04测试用例")
+
+            except ZeroDivisionError:
+                # 处理异常的代码块
+                logging.error("ZeroDivisionError: 除数不能为0")
+                assert False, "ZeroDivisionError: 除数不能为0"
 
     def teardown_method(self):
         """

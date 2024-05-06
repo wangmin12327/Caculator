@@ -1,0 +1,2 @@
+INFO     root:test_case_01.py:89 这是test_case_01测试用例
+INFO     root:test_case_01.py:90 断言 assert caculator.div() == expected

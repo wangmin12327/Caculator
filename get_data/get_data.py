@@ -20,13 +20,24 @@ class GetData:
             return data
 
     @staticmethod
-    def get_data_range_in():
+    def get_add_data_range_in():
         """
         获取用于测试的数据范围边界内的参数
         :return: 返回数据范围边界内的参数
         """
         # 如果yaml文件中有中文，需要加上encoding = "utf-8"
-        with open('../data/data_range_in.yaml', 'r', encoding="utf-8") as f:
+        with open('../data/add_data_range_in.yaml', 'r', encoding="utf-8") as f:
+            data = yaml.safe_load(f)
+            return data
+
+    @staticmethod
+    def get_div_data_range_in():
+        """
+        获取用于测试的数据范围边界内的参数
+        :return: 返回数据范围边界内的参数
+        """
+        # 如果yaml文件中有中文，需要加上encoding = "utf-8"
+        with open('../data/div_data_range_in.yaml', 'r', encoding="utf-8") as f:
             data = yaml.safe_load(f)
             return data
 
