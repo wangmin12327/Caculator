@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_case_01.py:83 这是test_case_01测试用例
-[32mINFO    [0m root:test_case_01.py:84 断言 assert caculator.div() == expected

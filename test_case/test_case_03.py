@@ -48,8 +48,9 @@ class TestCase:
     @allure.title("用户输入运算数据a、b，a或b大小超出范围")
     @allure.testcase("http://192.168.40.134:8080/projects/CACULATOR/issues/CACULATOR-5?filter=allissues", "用例管理系统")
     @pytest.mark.test_data_range
+    @pytest.mark.run(order=1)
     @pytest.mark.parametrize('a,b,expected', GetData.get_add_data_range_in())
-    def test_add_data_range_in(self, a, b, expected):
+    def test_add_data_range_in(self, a, b, expected, cmd_option):
         """
         测试add()函数的数据范围内参数
         :param a: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 a；
@@ -57,7 +58,8 @@ class TestCase:
         :param expected: 程序输出a加b的结果；
         :return: 返回 a加 b的结果；
         """
-        # step1(a, b, expected)
+        # step1(a, b, expected, cmd_option)
+        print(cmd_option)
         with allure.step("1、输入数据a、b，a、b属于集合{98，98.9，-98.9，-98}，调用add()方法；"):
             caculator = Caculator(a, b)
             try:
@@ -74,8 +76,9 @@ class TestCase:
     @allure.title("用户输入运算数据a、b，a或b大小超出范围")
     @allure.testcase("http://192.168.40.134:8080/projects/CACULATOR/issues/CACULATOR-5?filter=allissues", "用例管理系统")
     @pytest.mark.test_data_range
+    @pytest.mark.run(order=2)
     @pytest.mark.parametrize('a,b,expected', GetData.get_div_data_range_in())
-    def test_div_data_range_in(self, a, b, expected):
+    def test_div_data_range_in(self, a, b, expected, cmd_option):
         """
         测试add()函数的数据范围内参数
         :param a: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 a；
@@ -84,6 +87,7 @@ class TestCase:
         :return: 返回 a加 b的结果；
         """
         # step2(a, b, expected)
+        print(cmd_option)
         with allure.step("2、输入数据a、b, a、b属于集合{98，98.9，-98.9，-98}，调用div()方法；"):
             caculator = Caculator(a, b)
             try:
@@ -101,8 +105,9 @@ class TestCase:
     @allure.testcase("http://192.168.40.134:8080/projects/CACULATOR/issues/CACULATOR-5?filter=allissues",
                      "用例管理系统")
     @pytest.mark.test_data_range
+    @pytest.mark.run(order=3)
     @pytest.mark.parametrize('a,b,expected', GetData.get_data_range_out())
-    def test_add_data_range_out(self, a, b, expected):
+    def test_add_data_range_out(self, a, b, expected, cmd_option):
         """
         测试div()函数的数据范围内参数
         :param a: 输入集合{98，98.9，-98.9，-98}中的任意一个数据 a；
@@ -111,6 +116,7 @@ class TestCase:
         :return: 返回 a除以b的结果；
         """
         # step1(a, b, expected)
+        print(cmd_option)
         with allure.step("3、输入数据a、b，a、b属于集合{99，99.1，100，-99，-99.1，-100}，调用add()方法；"):
             caculator = Caculator(a, b)
             try:
@@ -127,8 +133,9 @@ class TestCase:
     @allure.testcase("http://192.168.40.134:8080/projects/CACULATOR/issues/CACULATOR-5?filter=allissues",
                      "用例管理系统")
     @pytest.mark.test_data_range
+    @pytest.mark.run(order=4)
     @pytest.mark.parametrize('a,b,expected', GetData.get_data_range_out())
-    def test_div_data_range_out(self, a, b, expected):
+    def test_div_data_range_out(self, a, b, expected, cmd_option):
         """
         测试add()函数的数据范围外参数
         :param a: 输入集合{99，99.1，100，-99，-99.1，-100}中的任意一个数据 a；
@@ -137,6 +144,7 @@ class TestCase:
         :return: 返回报错提示: "参数大小超出范围"；
         """
         # step2(a, b, expected)
+        print(cmd_option)
         with allure.step("4、输入数据a、b，a、b属于集合{99，99.1，100，-99，-99.1，-100}，调用div()方法；"):
             caculator = Caculator(a, b)
             try:

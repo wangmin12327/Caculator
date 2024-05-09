@@ -46,8 +46,9 @@ class TestCase:
     @allure.testcase("http://192.168.40.134:8080/projects/CACULATOR/issues/CACULATOR-4?filter=allissues",
                      "用例管理系统")
     @pytest.mark.test_normal
+    @pytest.mark.run(order=2)
     @pytest.mark.parametrize('a,b,expected', GetData.get_add_data())
-    def test_add(self, a, b, expected):
+    def test_add(self, a, b, expected, cmd_option):
         """
         测试add()函数
         :param a: 用户输入的数据a
@@ -56,6 +57,7 @@ class TestCase:
         :return: 返回a加b的结果
         """
         # step1(a, b, expected)
+        print(cmd_option)
         with allure.step("1、输入数据a、b, 调用add()方法；"):
             caculator = Caculator(a, b)
             try:
@@ -72,9 +74,11 @@ class TestCase:
     @allure.testcase("http://192.168.40.134:8080/projects/CACULATOR/issues/CACULATOR-4?filter=allissues",
                      "用例管理系统")
     @pytest.mark.test_normal
+    @pytest.mark.run(order=1)
     @pytest.mark.parametrize('a,b,expected', GetData.get_div_data())
-    def test_div(self, a, b, expected):
+    def test_div(self, a, b, expected, cmd_option):
         # step2(a, b, expected)
+        print(cmd_option)
         with allure.step("2、输入数据a、b, 调用div()方法；"):
             caculator = Caculator(a, b)
             try:

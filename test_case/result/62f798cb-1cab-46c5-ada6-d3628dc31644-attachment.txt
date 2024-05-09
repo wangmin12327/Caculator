@@ -1,2 +1,0 @@
-INFO     root:test_case_01.py:64 这是test_case_01测试用例
-INFO     root:test_case_01.py:65 断言 assert caculator.add() == expected

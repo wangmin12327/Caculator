@@ -44,8 +44,9 @@ class TestCase:
     @allure.issue("http://192.168.40.134:8080/projects/BUG/issues/BUG-2?filter=allopenissues", "Bug管理系统")
     @pytest.mark.xfail
     @pytest.mark.test_zero_division_error
+    @pytest.mark.run(order=1)
     @pytest.mark.parametrize('a,b,expected', GetData.get_zero_division_error())
-    def test_zero_division_error(self, a, b, expected):
+    def test_zero_division_error(self, a, b, expected, cmd_option):
         """
         测试div()函数对除数为0的异常进行异常提示
         :param a: 模拟用户输入的数据 a
@@ -54,6 +55,7 @@ class TestCase:
         :return: 返回异常类型ZeroDivisionError，并输出异常提示：除数不能为0
         """
         # step5(a, b, expected)
+        print(cmd_option)
         with allure.step("1、输入数据a、b, b=0，调用div()方法；"):
             caculator = Caculator(a, b)
             with open("../allure_print_screen/3.png", mode="rb") as f:

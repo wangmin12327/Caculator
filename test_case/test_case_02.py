@@ -45,10 +45,11 @@ class TestCase:
     @allure.testcase("http://192.168.40.134:8080/projects/CACULATOR/issues/CACULATOR-2?filter=allissues",
                      "用例管理系统")
     @allure.issue("http://192.168.40.134:8080/projects/BUG/issues/BUG-1?filter=allopenissues", "Bug管理系统")
-    @pytest.mark.xfail
+    # @pytest.mark.xfail
     @pytest.mark.test_data_type_error
+    @pytest.mark.run(order=1)
     @pytest.mark.parametrize('a,b,expected', GetData.get_data_type_error())
-    def test_add_data_type_error(self, a, b, expected):
+    def test_add_data_type_error(self, a, b, expected, cmd_option):
         """
         测试add()函数对输入数据的数据类型报错提示
         :param a: 除int整型、float浮点型、double浮点型以外的其他数据类型
@@ -57,6 +58,7 @@ class TestCase:
         :return: 返回报错提示：输入的数据a、b数据类型不合法；
         """
         # step3(a, b, expected)
+        print(cmd_option)
         with allure.step("1、输入数据a、b, a、b为除int整型、float浮点型、double浮点型以外的其他数据类型,调用add()方法；"):
             caculator = Caculator(a, b)
             with open("../allure_print_screen/1.png", mode="rb") as f:
@@ -76,10 +78,11 @@ class TestCase:
     @allure.testcase("http://192.168.40.134:8080/projects/CACULATOR/issues/CACULATOR-2?filter=allissues",
                      "用例管理系统")
     @allure.issue("http://192.168.40.134:8080/projects/BUG/issues/BUG-1?filter=allopenissues", "Bug管理系统")
-    @pytest.mark.xfail
+    # @pytest.mark.xfail
     @pytest.mark.test_data_type_error
+    @pytest.mark.run(order=2)
     @pytest.mark.parametrize('a,b,expected', GetData.get_data_type_error())
-    def test_div_data_type_error(self, a, b, expected):
+    def test_div_data_type_error(self, a, b, expected, cmd_option):
         """
         测试div()函数对输入数据的数据类型报错提示
         :param a: 除int整型、float浮点型、double浮点型以外的其他数据类型
@@ -88,6 +91,7 @@ class TestCase:
         :return: 返回报错提示：输入的数据a、b数据类型不合法；
         """
         # step4(a, b, expected)
+        print(cmd_option)
         with allure.step("1、输入数据a、b, a、b为除int整型、float浮点型、double浮点型以外的其他数据类型,调用add()方法；"):
             caculator = Caculator(a, b)
             with open("../allure_print_screen/2.png", mode="rb") as f:
